@@ -5,7 +5,7 @@ numpy
 lightgbm
 scikit-learn
 shap
-tensorflow
+tensorflow-cpu
 pandas
 python-multipart
 pydantic
