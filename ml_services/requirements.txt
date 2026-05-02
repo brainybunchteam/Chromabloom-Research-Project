@@ -1,11 +1,11 @@
 fastapi
 uvicorn
 joblib
-numpy
+numpy<2.0.0
 lightgbm
 scikit-learn
 shap
-tensorflow-cpu
+tensorflow
 pandas
 python-multipart
 pydantic
