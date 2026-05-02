@@ -5,12 +5,14 @@ import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 import 'package:mime/mime.dart';
 
+import '../api_config.dart';
+
 class DrawingPredictService {
 
   /// - Android emulator: use http://10.0.2.2:5000
   /// - Real device: use http://YOUR_PC_IP:5000  (PC + phone same WiFi)
   /// - Flutter web: use http://localhost:5000
-  static const String _baseUrl = "http://localhost:5000";
+  static String get _baseUrl => ApiConfig.baseUrl;
 
   /// Node route base
   static const String _path = "/chromabloom/gamified/drawing";

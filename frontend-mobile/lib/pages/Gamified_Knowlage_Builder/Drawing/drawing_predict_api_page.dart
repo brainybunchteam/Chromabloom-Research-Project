@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../../services/api_config.dart';
 import '../../../services/Gemified/drawing_ml_api_service.dart';
 
 class DrawingPredictApiPage extends StatefulWidget {
@@ -18,7 +19,7 @@ class _DrawingPredictApiPageState extends State<DrawingPredictApiPage> {
   // Emulator: "http://10.0.2.2:8000"
   // Phone/Chrome: "http://192.168.1.5:8000" (your PC IP)
 
-  final MlApiService _api = MlApiService(baseUrl: "http://localhost:8000");
+  final MlApiService _api = MlApiService(baseUrl: ApiConfig.mlServiceUrl);
 
   Uint8List? _imageBytes;
   bool _loading = false;

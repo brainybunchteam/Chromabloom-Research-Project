@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+import '../api_config.dart';
+
 /// Problem Solving Lesson Service
 /// Matches backend:
 /// POST   /chromabloom/problem-solving-lessons
@@ -12,7 +14,7 @@ class ProblemSolvingLessonService {
   ProblemSolvingLessonService._();
 
   // TODO: change to your server IP / domain
-  static const String _baseUrl = "http://localhost:5000"; // Android emulator
+  static String get _baseUrl => ApiConfig.baseUrl; // Android emulator
   // static const String _baseUrl = "http://localhost:5000"; // Flutter web
   // static const String _baseUrl = "http://192.168.x.x:5000"; // real device WiFi
 

@@ -46,11 +46,11 @@ class _DrawingUnit1PageState extends State<DrawingUnit1Page> {
 
     // Drawing lessons service
     _service = DrawingLessonService(
-      baseUrl: "http://localhost:5000/chromabloom/drawing-lessons",
+      baseUrl: "${ApiConfig.baseUrl}/chromabloom/drawing-lessons",
     );
 
     // Completed lesson service baseUrl (global)
-    CompleteDrawingLessonService.baseUrl = "http://localhost:5000";
+    CompleteDrawingLessonService.baseUrl = ApiConfig.baseUrl;
 
     final session = Provider.of<SessionProvider>(context, listen: false);
     _caregiverId =

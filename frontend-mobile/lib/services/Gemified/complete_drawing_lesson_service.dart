@@ -3,13 +3,14 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
+import '../api_config.dart';
 
 class CompleteDrawingLessonService {
   // Set this correctly:
   // Android emulator  : http://10.0.2.2:5000
   // Real device (WiFi): http://192.168.x.x:5000   (your PC IP)
   // Flutter web       : http://localhost:5000
-  static String baseUrl = "http://localhost:5000";
+  static String baseUrl = ApiConfig.baseUrl;
 
   // Route base (matches your Express mount)
   static const String _path = "/chromabloom/completed-drawing-lessons";

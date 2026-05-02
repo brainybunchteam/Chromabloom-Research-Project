@@ -5,12 +5,14 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 
+import '../api_config.dart';
+
 class QuizeService {
   /// IMPORTANT:
   /// - Android emulator: use 10.0.2.2 instead of localhost
   /// - Real device: use your PC IP (same WiFi), e.g. http://192.168.1.20:5000
   /// - iOS simulator: localhost usually works
-  static const String _base = "http://localhost:5000"; // <-- change if needed
+  static String get _base => ApiConfig.baseUrl; // <-- change if needed
   static const String _path = "/chromabloom/quizes";
 
   // ----------------------------

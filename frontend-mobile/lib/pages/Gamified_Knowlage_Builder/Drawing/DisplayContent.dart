@@ -5,7 +5,7 @@ import '../../others/header.dart';
 import '../../others/navBar.dart';
 import '../../../services/Gemified/drawing_lesson_service.dart';
 
-// ✅ one import works on both platforms (conditional)
+import '../../../services/api_config.dart';
 import '../../../widgets/hybrid_video_player/hybrid_video_player.dart';
 
 class DrawingLessonDetailPage extends StatefulWidget {
@@ -36,9 +36,7 @@ class _DrawingLessonDetailPageState extends State<DrawingLessonDetailPage> {
   void initState() {
     super.initState();
 
-    final apiBase = kIsWeb
-        ? "http://localhost:5000/chromabloom/drawing-lessons"
-        : "http://localhost:5000/chromabloom/drawing-lessons";
+    final apiBase = "${ApiConfig.baseUrl}/chromabloom/drawing-lessons";
 
     _service = DrawingLessonService(
       baseUrl: apiBase,
