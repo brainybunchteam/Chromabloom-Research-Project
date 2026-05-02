@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../../state/session_provider.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -14,7 +16,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Future.delayed(const Duration(seconds: 4), () {
       if (!mounted) return;
-      Navigator.pushReplacementNamed(context, '/welcome_screen');
+      
+      final session = context.read<SessionProvider>();
+      if (session.isLoggedIn) {
+        Navigator.pushReplacementNamed(context, '/');
+      } else {
+        Navigator.pushReplacementNamed(context, '/welcome_screen');
+      }
     });
   }
 
