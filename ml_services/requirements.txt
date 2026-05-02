@@ -9,3 +9,4 @@ tensorflow
 pandas
 python-multipart
 pydantic
+Pillow
