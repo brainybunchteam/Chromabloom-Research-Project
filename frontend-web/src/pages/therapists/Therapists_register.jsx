@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { IoLogIn } from "react-icons/io5";
 import { registerTherapistService } from "../../services/therapistService";
-import ellipse1 from '../../assets/Therapists/ellipse_1.png';
+import ellipse1 from '../../assets/Therapists/Ellipse_1.png';
 import ellipse2 from '../../assets/Therapists/ellipse_2.png';
 import doctor from '../../assets/Therapists/doctor.png';
 
