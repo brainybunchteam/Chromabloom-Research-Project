@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import logo1 from "../../assets/ChromaBloom1.png";
-import logo2 from "../../assets/ChromaBloom2.png";
+import logo1 from "../../assets/Chromabloom1.png";
+import logo2 from "../../assets/Chromabloom2.png";
 
 export const Home = () => {
   const navigate = useNavigate();
