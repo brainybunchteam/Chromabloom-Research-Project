@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./pages/other/home";
+import { Home } from "./pages/other/Home";
 import AdminLayout from "./pages/admin/Admin_Management/AdminLayout";
 
 import { TherapistsLogin } from "./pages/therapists/therapists_login";
