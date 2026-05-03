@@ -1,7 +1,7 @@
 // src/services/quizeService.js
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://chromabloom-backend.onrender.com";
 const ENDPOINT = `${API_BASE}/chromabloom/quizes`;
 
 // -------- helpers --------

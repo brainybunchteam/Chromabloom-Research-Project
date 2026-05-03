@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/chromabloom/complete-problem-solving-sessions";
+const API_BASE_URL = "https://chromabloom-backend.onrender.com/chromabloom/complete-problem-solving-sessions";
 
 // CREATE SESSION
 export const createCompleteProblemSolvingSession = async (data) => {

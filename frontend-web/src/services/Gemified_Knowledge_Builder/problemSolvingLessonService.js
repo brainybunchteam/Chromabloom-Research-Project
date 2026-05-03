@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Put your backend base URL in .env (recommended)
 // VITE_API_BASE_URL=http://localhost:5000
-const API_BASE =  "http://localhost:5000";
+const API_BASE =  "https://chromabloom-backend.onrender.com";
 
 // Your router is mounted like:
 // app.use("/chromabloom/problem-solving-lessons", router)

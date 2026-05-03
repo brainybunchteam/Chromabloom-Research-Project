@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000/chromabloom/recommendations";
+const API_BASE = "https://chromabloom-backend.onrender.com/chromabloom/recommendations";
 
 // -----------------------------
 // CREATE new recommendation

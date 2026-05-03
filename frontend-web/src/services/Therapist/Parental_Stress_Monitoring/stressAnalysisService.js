@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000/chromabloom/stressAnalysis";
+const API_BASE = "https://chromabloom-backend.onrender.com/chromabloom/stressAnalysis";
 
 class StressAnalysisService {
   static async getHistory(caregiverId, limit = 14) {

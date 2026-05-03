@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:5000/chromabloom/systemActivities";
+const baseURL = "https://chromabloom-backend.onrender.com/chromabloom/systemActivities";
 
 const http = axios.create({ baseURL });
 

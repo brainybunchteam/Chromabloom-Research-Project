@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://chromabloom-backend.onrender.com";
 const BASE_URL = `${API_BASE}/chromabloom/drawing-lessons`;
 
 export async function getAllDrawingLessons() {

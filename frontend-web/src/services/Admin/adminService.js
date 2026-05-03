@@ -1,7 +1,7 @@
 // src/services/admin.service.js
 import axios from "axios";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://chromabloom-backend.onrender.com";
 const ADMIN_BASE = `${API_BASE}/chromabloom/admins`;
 
 const api = axios.create({

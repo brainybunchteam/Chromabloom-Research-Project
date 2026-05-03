@@ -3,7 +3,7 @@ import axios from "axios";
 
 // ✅ Change base URL to match your backend route
 // Example: http://localhost:5000/chromabloom/children
-const API_BASE_URL = "http://localhost:5000/chromabloom/children";
+const API_BASE_URL = "https://chromabloom-backend.onrender.com/chromabloom/children";
 
 // CREATE / REGISTER CHILD
 export const createChildService = async (data, token) => {

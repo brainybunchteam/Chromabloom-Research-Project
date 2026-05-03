@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // 👇 Change this to match your backend base path
-const API_BASE_URL = "http://localhost:5000/chromabloom/therapists";
+const API_BASE_URL = "https://chromabloom-backend.onrender.com/chromabloom/therapists";
 
 export const registerTherapistService = async (data) => {
   const res = await axios.post(`${API_BASE_URL}/register`, data, {
